@@ -7,12 +7,13 @@
 
 html {
     height: 100%;
+    background: linear-gradient(#eaeaea, white);
 }
 
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     height: 100%;
 }
@@ -21,12 +22,24 @@ body {
     max-width: 500px;
     margin: 0 auto;
     padding: 24px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #0000002b;
+    margin-top: 64px;
+}
+
+@media screen and (min-width: 768px) {
+    .site {
+        margin-top: 20%;
+    }
 }
 
 h1 {
     margin: 0;
     font-size: 16.2px;
+
 }
+
+
 
 #add {
     background-color: lightgreen;
