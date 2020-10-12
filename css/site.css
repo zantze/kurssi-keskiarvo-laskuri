@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.site {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 15.4px;
+}
+
+#add {
+    background-color: lightgreen;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    position: relative;
+    z-index: 5;
+}
+
+#add:hover {
+    background-color: #69cc69;
+    cursor: pointer;
+}
+
+#calc {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    font-size: 22px;
+    background-color: #eee;
+}
+
+#calc:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.value {
+    padding: 6px 0;
+}
+
+.input-container {
+    display: inline-block;
+    position: relative;
+}
+
+.weight, .grade {
+    width: 80px;
+    font-size: 20px;
+    padding-top: 6px;
+}
+
+.input-container::before {
+    position: absolute;
+    top: -7px;
+    left: 8px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.input-grade::before {
+    content: 'arvosana';
+}
+
+.input-weight::before {
+    content: 'painoarvo';
+}
+
+#result {
+    display: block;
+    font-size: 19px;
+}
+
+#result span {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
